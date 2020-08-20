@@ -1,4 +1,4 @@
-# Vinvent-Rest-API-React-Front-end
+# Vinvent Rest-API React Front-end
 
 This project follows Vincent Django for API's
 
