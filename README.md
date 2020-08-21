@@ -1,4 +1,4 @@
-## Custom front-end that accepts call from Master branch back-end
+## Custom front-end that calls from Master branch back-end
 
 In the project directory, you can run:
 
