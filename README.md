@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Custom front-end that accepts call from Master branch back-end
 
 In the project directory, you can run:
 
