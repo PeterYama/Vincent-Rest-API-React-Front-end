@@ -15,6 +15,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # My apps
     'todos',
+    'posts',
     # 3rd party
     'rest_framework',
     'corsheaders',
@@ -27,10 +28,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CROSS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
-    'http://localhost:8000',
-)
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:3000"
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ['rest_framework.permissions.AllowAny',]
 }
