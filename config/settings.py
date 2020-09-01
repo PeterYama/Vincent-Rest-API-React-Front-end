@@ -9,6 +9,8 @@ SECRET_KEY = 'j__@a$p9*#8p^_d35nfk--%aq%6sr17&)%l0n5g=yp*%t5327)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'users.CustomUser'
+
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -16,6 +18,7 @@ INSTALLED_APPS = [
     # My apps
     'todos',
     'posts',
+    'users',
     # 3rd party
     'rest_framework',
     'corsheaders',
@@ -74,11 +77,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+DATABASENAME = str(BASE_DIR / "db.sqlite3")
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DATABASENAME,
     }
 }
 
